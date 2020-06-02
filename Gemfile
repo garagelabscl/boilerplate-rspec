@@ -42,7 +42,7 @@ group :development, :test do
 
   # Gemas para testing
   gem 'rspec-rails', '~> 3.7'
-  gem 'factory_bot_rails', require: false
+  gem 'factory_bot_rails'
   gem 'database_cleaner'
 end
 
@@ -58,6 +58,7 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
+  gem 'capybara-webkit'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
